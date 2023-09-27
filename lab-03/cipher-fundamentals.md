@@ -5,7 +5,7 @@ Objective: The objective of this lab is to introduce some of the fundamental pri
 
 
 ## Introduction
-1. Determine the Base 64 and Hex values for the following strings:  
+1. Determine the Base64 and Hex values for the following strings:  
 Hello  
 hello  
 HELLO
@@ -67,8 +67,8 @@ print ("Char:\t",chr(x))
 
 ```python
 import base64 
-str=”crypto” 
-print base64.b64encode(str) 
+str=b"crypto"
+print (base64.b64encode(str))  
 ```
 
 11. If we use a string of “crypto1”, what do you observe from the Base64 conversion compared to the result in the previous question? 

@@ -40,7 +40,7 @@ class mersenne_rng(object):
 ```
 pip install z3-solver
 ```
-Sample code to break [Mersenne Twister]()
+Sample code to break [Mersenne Twister](breakMT.py)
 
 
 ## REFERENCES

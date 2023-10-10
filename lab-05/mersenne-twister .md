@@ -16,7 +16,7 @@ Note that even though Python uses MT19937 internally, we reimplement it in pure 
 
 The Mersenne Twister MT19937 has an internal state consisting of 624 32-bit integers which is periodically updated. Additionally, the Mersenne Twister contains some static parameters.
 
-'''python
+```python
 class mersenne_rng(object):
     def __init__(self, seed=5489):
         self.state = [0]*624
@@ -31,4 +31,4 @@ class mersenne_rng(object):
         self.index = 624
         self.lower_mask = (1 << 31)-1
         self.upper_mask = 1 << 31
-  '''
+  ```

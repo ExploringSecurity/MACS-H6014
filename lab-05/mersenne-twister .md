@@ -37,13 +37,14 @@ class mersenne_rng(object):
 
 > :bulb: You may need to install z3
 
-Sample code to break [Mersenne Twister]()
 ```
 pip install z3-solver
 ```
+Sample code to break [Mersenne Twister]()
+
 
 ## REFERENCES
 - The implementation of MT19937 that we used: (https://github.com/james727/MTP)
-- Cloning MT19937 is one of the [cryptopals challenges](https://cryptopals.com/sets/3/challenges/23) . Consequently there are other solutions to this problem out on the Internet such as [thisone](https://blog.infosectcbr.com.au/2019/08/cryptopals-challenge-23-clone-mt19937.html) .
+- Cloning MT19937 is one of the [cryptopals challenges](https://cryptopals.com/sets/3/challenges/23) . Consequently there are other solutions to this problem out on the Internet such as [thisone](https://blog.infosectcbr.com.au/2019/08/cryptopals-challenge-23-clone-mt19937.html) 
 - The original PRNG in Python is available [here](https://github.com/python/cpython/blob/3.8/Modules/_randommodule.c) . We did not use that one directly, because it is a C-module inside of Python and thus is not easy to access directly.
-- 
+  

@@ -1,6 +1,6 @@
 # Lab 6: bit Flipping attack 
 
-Objective: Demonstrate a simple bit Flipping attack ahgainst AES used in CTR mode. 
+Objective: Demonstrate a simple bit Flipping attack against AES used in CTR mode. 
 
 ## Scenario
 While we can't break the main AES algorithm (Not yet anyways), we can attack it's integrity. This is because some modes of AES are not good at handling the integrity of the message. The fast stream cipher modes, such as with CTR & GCM are especially prone to this lack of integrity checking, as it is easy to pick off the characters to target.

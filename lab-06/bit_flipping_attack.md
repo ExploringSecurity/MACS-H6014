@@ -64,3 +64,14 @@ And magically, we have converted our grade from an 'F' to a 'B'
 ## Why does this happen? 
 
 Well, the integrity checking in OpenSSL is not very good, and it struggles to detect whether bits have been flipped in the cipher.
+
+## Try It Yourself.
+
+See if you can recreate the steps performed above. This time we'll use the original message: 
+
+```Credit Mark Cummins Balance 1000 Euro```
+
+Just change my bank balance by flipping a few bits
+
+```Credit Mark Cummins Balance 9999 Euro```
+

@@ -5,7 +5,7 @@
 
 
 
-## Lab 10: Breaking Salted Hashes
+## Lab 11: Breaking Salted Hashes
 
 In the previous lab we looked at various different approaches to password hashing. In this challenge lab we'll play the role of the hacker attempting to brute-force a captured database of user credentials including salted hashes of the user's passwords. The lab will involve brute forcing and may take several hours to complete fully. So if you have a spare machine you can leave running then that might be an option or if you're feeling adventurous maybe look at running your brute forcing on some cloud setup (but watch the costs!!!)
 

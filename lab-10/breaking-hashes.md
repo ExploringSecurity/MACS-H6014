@@ -5,7 +5,7 @@
 
 
 
-## Lab 5B: Breaking Salted Hashes
+## Lab 10: Breaking Salted Hashes
 
 In the previous lab we looked at various different approaches to password hashing. In this challenge lab we'll play the role of the hacker attempting to brute-force a captured database of user credentials including salted hashes of the user's passwords. The lab will involve brute forcing and may take several hours to complete fully. So if you have a spare machine you can leave running then that might be an option or if you're feeling adventurous maybe look at running your brute forcing on some cloud setup (but watch the costs!!!)
 
@@ -25,12 +25,12 @@ You’ve been asked by the Garda to assist in helping to retrieve some hashed pa
 
 The issue seems to be that the database is only storing the password hashes, and so far their attempts to brute force the passwords have failed. They have tried their standard rainbow tables without success and suspect that the passwords may have been salted. 
 
-A brief analysis of the hashes supports this belief and indicates that all the passwords have been hashed with the same salt.Can you help the Garda and crack any of the salted hashed passwords?
+A brief analysis of the hashes supports this belief and indicates that all the passwords have been hashed with the same salt. Can you help the Garda and crack any of the salted hashed passwords?
 
 
 **Some potentially useful information from the Garda case files:**
 
-- The password policy file was changed in May 2019, passwords created after this date are alphanumeric 5-7 characters in length. Passwords created before these dates are believed to have consisted of only digits and 5-7 characters in length.
+- The password policy file was changed in May 2019, passwords created after this date are alphanumeric 5-10 characters in length. Passwords created before these dates are believed to have consisted of only digits and 5-8 characters in length.
 - It’s believed that all passwords have used the same salt, however the salt is missing from the database and all source code has been corrupted.
 - The salt is believed to be a short (5 digits) numerical string
 - The database dump is from MySQL database
@@ -40,14 +40,14 @@ Retrieve as much information as you can from the dump below for the Garda
 
 | Join_date | Username | Password | Role | Last_accessed | Pass_modified |
 | --------- | -------- | -------- | ---- | ------------- | ------------- |
-|2018-06-07|Sparky|c277243d2d39de474f3070d5c673ed492cea1b9e|Admin|2020-02-25|2020-01-09|
-|2019-06-03|Mark123|7a1d64ffa965a52b420570aa4f4c6aa450870fea|user|2019-12-20|2019-06-03|
-|2018-09-02|superman|3450fd71d9702d3a7b835a1536a9ad2650eff209|user|2020-01-12|2019-10-01|
-|2019-01-11|security|0f295b9e67f362f1be3cd7d0b30d4f4007f88a0e|user|2019-12-07|2019-04-11|
-|2018-12-03|Tomtom|d71b12c1eb8bf31ca6d19344e2504b0d2916635e|user|2019-12-03|2018-01-03|
-|2019-04-11|JillC|335bcd081c21b75a3866262fc45545c880786054|user|2020-02-19|2019-12-20|
+|2018-06-07|Sparky|3911aa33ff9e42607f067bf7418e13e30dfa0344fe4cf102d2ec5b3345e05268|Admin|2020-02-25|2020-01-09|
+|2019-06-03|Mark123|4151c62d5d7849d8008a3f019d247cc58743b2471bd3a935cf49a3eb7bf0d044|user|2019-12-20|2019-06-03|
+|2018-09-02|superman|bb0004c532f2fbc902e6969324b03e4273a12c217de805ab29bf49590bdd5c20|user|2020-01-12|2019-10-01|
+|2019-01-11|security|905ffd3b29be7a573c90d77caae1bcc86fb889f1c2225820489b7e24458b7d03|user|2019-12-07|2019-04-11|
+|2018-12-03|Tomtom|a58a415e05bc63b325d88febe568e7a7109236b80da7296ff52b58744228f8f3|user|2019-12-03|2018-01-03|
+|2019-04-11|JillC|456b3c4e065947fc355b24c5ae2424f8821b9e42797d5ca98555681089f3a7be|user|2020-02-19|2019-12-20|
 
 
 ### 5. Submission
 
-You just need to upload your final user:password pairs for any of the hashes that you managed to brute force and then demo your approach during the labs.
+You just need to upload your final user:password pairs for any of the hashes that you managed to brute force and then submit a detailed lab report outlining the exact methods used and demo your approach during the labs.

@@ -101,11 +101,11 @@ $ shasum -a 256 labfile.txt
 2. The next step is to pad the hash value, so it is extended to the RSA key size by prefixing padding, this avoids any 'plain RSA' attacks.
    The default padding scheme in openssl is PKCS1, and it works as shown below.
    
-PKCS#1v1.5 padding scheme: 00||01||PS||00||T||H  
-PS: Octet string with FF such that length of message is equal to key size.  
-T: Identifier of signature scheme (Each scheme has its MAGIC bytes).  
-H: Hash value of the message.  
-PKCS#1v1.5 padding scheme for SHA-256:  
+> PKCS#1v1.5 padding scheme: 00||01||PS||00||T||H  
+> PS: Octet string with FF such that length of message is equal to key size.  
+> T: Identifier of signature scheme (Each scheme has its MAGIC bytes).  
+> H: Hash value of the message.  
+> PKCS#1v1.5 padding scheme for SHA-256:  
 
 PKCS1 padding scheme for SHA256 digest algorithm
 ```bash
